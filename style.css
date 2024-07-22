@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+p{
+    color: #000000;
+    font-size: 3pc;
+}
+a {
+    color: #00fbff;
+}
+
+/* Navbar-Stile */
+nav {
+    display: flex;
+    justify-content: center; /* Horizontales Zentrieren */
+    align-items: center; /* Vertikales Zentrieren */
+    width: 100%;
+    height: 4pc;
+    background-color: #ffffff59;
+    position: fixed;
+    top: 0; /* Fixierung am oberen Rand */
+    left: 0; /* Fixierung am linken Rand */
+}
+
+nav img {
+    margin-left: 1pc; /* Abstände zwischen den Elementen */
+}
+
+nav a {
+    font-size: 3pc;
+    text-decoration: none;
+    margin: 0 1pc; /* Abstände zwischen den Links */
+    color: #00fbff;
+    display: block; /* Links im Block-Stil anzeigen */
+}
+
+/* Gradient Text */
+.gradient-text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(90deg, #FF00FF, #00FFFF, #FF6600, #FFFF00, #00FF00, #FF0000);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: neon 1.5s infinite alternate;
+}
+
+.no-repeat-color span {
+    display: inline-block;
+    position: relative;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #eaff00, 0 0 20px #eaff00, 0 0 30px #eaff00, 0 0 40px #eaff00, 0 0 50px #eeff00, 0 0 60px #eaff00, 0 0 70px #eaff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 60px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF;
+    }
+}
